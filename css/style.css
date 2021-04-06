@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+main {
+    width: 60vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    background-color: blue;
+    padding: 3rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    text-align: left;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.5rem;
+    max-width: 200px;
+}
+
+#sedans {
+    grid-column: 1;
+    background-color: hsl(31, 77%, 52%);
+}
+
+#suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+button {
+    height: 50px;
+    width: 130px;
+    border-radius: 30px;
+    background-color: hsl(0, 0%, 95%);
+    border: 5px solid hsl(0, 0%, 95%);
+    align-self: flex-end;
+    font-weight: 700;
+}
+
+#sedans button {
+    color: hsl(31, 77%, 52%);
+}
+
+#suvs button {
+    color: hsl(184, 100%, 22%);
+}
+
+#luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+button:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#sedans button:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+#suvs button:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+#luxury button:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        width: 100vw;
+        height: 100%;
+        margin: 20px 0;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 80vw;
+        height: 900%;
+    }
+}
